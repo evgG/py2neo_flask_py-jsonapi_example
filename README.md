@@ -4,6 +4,7 @@ This is an example of my tests on flask, py-jsonapi and py2neo
 Based on [Nigel Small's Demo](https://github.com/nigelsmall/py2neo/demo)
 
 I change Bottle to Flask, and remove __primarykey__ on py2neo ogm models
+Python3 only, because py-jsonapi work only on python3
 
 License
 -------
