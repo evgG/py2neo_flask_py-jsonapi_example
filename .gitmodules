@@ -1,0 +1,4 @@
+[submodule "py-jsonapi"]
+    path = py-jsonapi
+    url = git://git@github.com:evgG/py-jsonapi.git
+    branch = py2neo
