@@ -55,7 +55,6 @@ def get_person(_id):
     person = Person.select(graph, int(_id)).first()
     movies = sorted([(movie, "Actor") for movie in person.acted_in] +
                     [(movie, "Director") for movie in person.directed])
-    print(movies)
     return render_template("person.html", person=person, movies=movies)
 
 
