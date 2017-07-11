@@ -18,8 +18,6 @@ pip:
 
 pip install -r requirements.txt
 
-pip install git+https://github.com/evgG/py-jsonapi.git@py2neo#egg=py-jsonapi
-
 neo4j server:
 - Running Neo4j server, i prefer [docker image](https://github.com/neo4j/docker-neo4j)
 - Movie data set (`:play movies` in browser)
@@ -29,7 +27,7 @@ Usage
 
 To run from the root of the source tree:
 ```
-PYTHONPATH=. NEO4J_PASSWORD="password" python -m moviegraph.flask_server
+PYTHONPATH=PYTHONPATH:.:py-jsonapi NEO4J_PASSWORD="<password>" python -m moviegraph.flask_server
 ```
 
 Here you have 2 options:
